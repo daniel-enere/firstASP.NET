@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using First.NETwebApplication.Models;
 
 namespace First.NETwebApplication
 {
@@ -22,6 +24,9 @@ namespace First.NETwebApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddDbContext<FirstNETwebApplicationContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("FirstNETwebApplicationContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
