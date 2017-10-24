@@ -24,6 +24,7 @@ namespace First.NETwebApplication.Models
                         Title = " When Harry Met Sally",
                         ReleaseDate = DateTime.Parse("1989-1-11"),
                         Genre = "Romantic Comedy",
+                        Rating = "R",
                         Price = 7.99M
                     },
 
@@ -32,6 +33,7 @@ namespace First.NETwebApplication.Models
                         Title = "Ghostbusters",
                         ReleaseDate = DateTime.Parse("1984-3-13"),
                         Genre = "Comedy",
+                        Rating = "PG",
                         Price = 8.99M
                     },
 
@@ -40,6 +42,7 @@ namespace First.NETwebApplication.Models
                         Title = " IT",
                         ReleaseDate = DateTime.Parse("2017-9-8"),
                         Genre = "Drama Thriller",
+                        Rating = "R",
                         Price = 17.99M
                     },
 
@@ -48,6 +51,7 @@ namespace First.NETwebApplication.Models
                         Title = "The House",
                         ReleaseDate = DateTime.Parse("2017-6-30"),
                         Genre = "Comedy",
+                        Rating = "R",
                         Price = 4.99M
                     }
                 );

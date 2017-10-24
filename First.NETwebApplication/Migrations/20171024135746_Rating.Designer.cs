@@ -11,9 +11,10 @@ using System;
 namespace First.NETwebApplication.Migrations
 {
     [DbContext(typeof(FirstNETwebApplicationContext))]
-    partial class FirstNETwebApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20171024135746_Rating")]
+    partial class Rating
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
